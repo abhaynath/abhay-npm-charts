@@ -2,8 +2,8 @@
   "name": "abhay-charts",
   "version": "1.0.1",
   "description": "A library to calculate chart",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "test": "jest --config jestconfig.json",
     "build": "tsc",
