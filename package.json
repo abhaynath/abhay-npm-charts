@@ -2,25 +2,42 @@
   "name": "abhay-charts",
   "version": "1.0.0",
   "description": "A library to calculate chart",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "test": "jest --config jestconfig.json",
-    "build": "tsc"
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "abhay",
+    "charts"
+  ],
+  "author": "Abhay Nath",
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^28.1.7",
     "jest": "^28.1.3",
+    "prettier": "^2.7.1",
     "ts-jest": "^28.0.8",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
     "typescript": "^4.7.4"
   },
   "repository": {
     "type": "git",
-    "url": ""
-
+    "url": "git+https://github.com/abhaynath/abhay-npm-charts.git"
   },
+  "bugs": {
+    "url": "https://github.com/abhaynath/abhay-npm-charts/issues"
+  },
+  "homepage": "https://github.com/abhaynath/abhay-npm-charts#readme",
   "files": [
     "lib/**/*"
   ]
