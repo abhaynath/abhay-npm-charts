@@ -1,6 +1,6 @@
 {
   "name": "abhay-charts",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A library to calculate chart",
   "main": "index.js",
   "types": "index.d.ts",
@@ -14,7 +14,7 @@
     "preversion": "npm run lint",
     "version": "git add -A src",
     "postversion": "git push && git push --tags",
-    "patch":"npm version patch"
+    "patch": "npm version patch"
   },
   "keywords": [
     "abhay",
