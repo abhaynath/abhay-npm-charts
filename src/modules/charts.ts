@@ -1,5 +1,7 @@
 class Charts {
-  constructor() {}
+  constructor() {
+    console.log("Charts constructor called.");
+  }
   public scale(): number {
     return 56;
   }
