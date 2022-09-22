@@ -18,7 +18,8 @@
     "version": "git add -A src",
     "postversion": "git push && git push --tags",
     "patch": "npm version patch",
-    "docs": "typedoc --entryPointStrategy expand ./src"
+    "docs": "typedoc --entryPointStrategy expand ./src",
+    "deploy": "npm publish"
   },
   "keywords": [
     "abhay",
